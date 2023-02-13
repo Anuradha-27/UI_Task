@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form</title>
+  <link rel="stylesheet" href="/CSS/style.css">
+  <script src="/JS/registration.js"></script>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class ='heading'>
+         <strong><h3> <u>Registration Form </u></h3></strong>
+    </div>
+    <div class="lbl">
+        <label >First Name</label><span style color="red">*</span><span id="massage"></span>
+    </div>
+    <div>
+        <input type="text" class="fname" id="fname" autocomplete="off">
+    </div>
+    <div class="lbl">
+        <label>Last Name</label>
+    </div>
+    <div>
+         <input type="text" name="lname" id="lname" autocomplete="off">
+     </div>
+     <div class="lbl">
+         <label>Email</label><span style color="red">*</span>
+    </div>
+    <div> 
+        <input type="text"  id="eml" value ="" autocomplete="off">
+    </div>
+    <div class="lbl">
+        <label>Password</label><span style color="red">*</span>
+    </div>
+    <div>
+        <input type="password" name="pwd" id="pwd">
+    </div>
+    <div class="lbl">
+        <label">Confirm Password</label><span style color="red">*</span>
+    </div>
+    <div> 
+        <input type="password" name="confPwd" id="confPwd">
+        <span class="msgPsw">Note:At least 1 letter| 1 number | 1 special character</span>
+
+    </div>
+    <div class="lbl">
+       <label>Notes</label>
+    </div>
+    <div class="textarea">
+       <textarea name="notes" id="notes" placeholder="Notes"></textarea>
+    </div>
+    <div>
+      <button type="button" id="btn" value="submit" onclick="validate();">Submit</button>
+      <!--        <button type="button" id="reset" value="reset" onclick="myFunction()">Reset</button>
+        -->
+    </div>
+    <div class="log">
+        <p align="center"> Already have an account? <a href="login.html">Sign in</a></p>
+    </div>
+    
+   </div>
+ <div id="msg">Form submitted successfully</div>
+    <div id="msg1">Fields can't be empty</div>
+    <div id="msg2">Password don't match</div>
+    <div id="msg3">Minimum 4 characters, at least one letter, one number and one special character</div>
+    <div id="msg4"> Invalid email</div>
+                                                                            
+</body>
+</html>

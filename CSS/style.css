@@ -1,0 +1,330 @@
+.container {
+
+    /* border:1px solid black;
+    width:450px;
+    height: 524px;
+    padding: 28px;
+    margin: 200px;
+    
+    display: grid;
+    border-radius: 10px;  */
+    border: 1px solid black;
+    display: grid;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 40px;
+    margin-left: 350px;
+    margin-right: 350px;
+    height: auto;
+    width: 410px;
+    background-color: white;
+    box-shadow: 0px 3px 2px 2px grey;
+    }
+    
+    
+    h3 {
+    padding: 2px;
+    
+    margin-bottom: 7px;
+    text-align: center;
+    /* margin-left:190px; */
+    /* font-style: italic; */
+    }
+    
+    .lbl {
+    text-align: left;
+    border-color: black;
+    margin-bottom: 0px;
+    margin: 4px;
+    margin-left: 22px;
+    }
+    .textarea {
+    margin-left: 0px;
+    }
+    input {
+    background: repeat-x center bottom;
+    padding: 6px 16px;
+    text-align: justify;
+    font-size: small;
+    display: inline-block;
+    width: 370px;
+    height: 28px;
+    background-color: white;
+    color: black;
+    border-radius: 8px;
+    border: 2px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-top: 2px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+    position: relative;
+    cursor: pointer;
+    }
+    
+    button,
+    textarea {
+    margin-top: 15px;
+    border-radius: 10px;
+    border: none;
+    display: inline-block;
+    background-color: transparent;
+    
+    }
+    
+    button {
+    display: inline-block;
+    border: 1px solid black;
+    color: white;
+    padding-right: 10px;
+    height: 35px;
+    width: 130px;
+    background-color: skyblue;
+    margin-top: 15px;
+    cursor: pointer;
+    border: none;
+    margin-left: 130px;
+    text-transform: uppercase;
+    }
+    
+    button:hover {
+    opacity: 0.7;
+    background: linear-gradient(45deg, greenyellow, dodgerblue);
+    }
+    
+    textarea {
+    position: block;
+    margin-top: 5px;
+    width: 370px;
+    height: 40px;
+    border-color: black;
+    background-color: white;
+    border: 1px solid black;
+    text-align: start;
+    margin-left: 20px;
+    cursor: pointer;
+    }
+    
+    .title {
+    width: auto;
+    height: 70px;
+    }
+    
+    div {
+    margin-bottom: 10px;
+    margin-left: 3px;
+    }
+    .msgPsw {
+    color:black;
+    font-size:small;
+    margin-left: 9%;
+    }
+    span {
+    color: red;
+    font-size:medium;
+    padding-left: 5px;
+    margin-bottom: none;
+    }
+    
+    body {
+    
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #d5eafc;
+    
+    
+    }
+    
+    * {
+    box-sizing: border-box;
+    }
+    
+    input::placeholder {
+    opacity: 0.5;
+    }
+    .input{
+        color: black;
+    }
+    .error{
+        font-size: small;
+        text-align: center;
+    }
+    /* Toast Massage CSS */
+    #msg {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -55px;
+    background-color:green;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    }
+    
+    #msg1,#msg2,#msg4 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -55px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 10px;
+    font-size: 17px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    #msg3 {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -55px;
+    background-color: red;
+    color: #fff;
+    text-align: center;
+    border-radius: 10px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 10px;
+    font-size: 12px;
+    height: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    }
+    
+    #msg.show, #msg1.show, #msg2.show,#msg3.show,#msg4.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s; 
+    animation: fadein 0.5s, fadeout 0.1s 2.5s; 
+    }
+    
+    @-webkit-keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+    }
+    
+    @keyframes fadein {
+    from {
+      bottom: 0;
+      opacity: 0;
+    }
+    
+    to {
+      bottom: 30px;
+      opacity: 1;
+    }
+    }
+    
+    @-webkit-keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+    }
+    
+    @keyframes fadeout {
+    from {
+      bottom: 30px;
+      opacity: 1;
+    }
+    
+    to {
+      bottom: 0;
+      opacity: 0;
+    }
+    }
+    /* // media queries */
+    
+    @media (max-width:321px) {
+    .container{
+    margin-top: 30px;
+    margin-left:0px;
+    margin-right:5px;
+    width: 290px;
+    position:relative;
+    
+    }
+    input {
+    width:248px
+    }
+    textarea {
+    width: 248px;
+    }
+    button {
+    margin-left:65px;
+    }
+    }
+    @media screen and (max-width:480px) {
+    .container{
+    margin-top: 20px;
+    margin-left:-50px;
+    margin-right:auto;
+    width: 400px;
+    position:absolute;
+    
+    }
+    input {
+    width:368px
+    }
+    textarea {
+    width: 368px;
+    }
+    }
+    
+    @media screen and (max-width:768px)  {
+    .container{
+    margin-top: 80px;
+    margin-left: 165px;
+    margin-right: 120px;
+    
+    }
+    input {
+    width:350px;
+    }
+    textarea {
+    width:350px;
+    }
+    } 
+
+    .nav{
+        background-color: black;
+        border-radius: 30px;
+      }
+
+      .nav li{
+        float:left;
+        list-style: none; 
+        margin: 13px 20px;
+    }
+
+    .nav ul{
+        overflow: auto;
+    }
+
+    .nav li a{
+        padding: 3px 3px;
+        text-decoration: none;
+        color: white;
+    }

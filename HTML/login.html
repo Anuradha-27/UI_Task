@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/login.js"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="lbl">
+            <h2 align="center"><u>Login</u></h2>
+            <label>Username</label>
+            
+        </div>
+        <div class="input">
+            <input type="text" id="email" placeholder="Enter your email" autocomplete="off">
+        </div>
+        <div class="lbl">
+            <label>Password</label>
+            
+        </div>
+        <div class="input">
+            <input type="password" id="psw" placeholder="Enter your password">
+        </div>
+        <div>
+            <button type="button" id="btn"  onclick="sendLoginFun();">Submit</button>
+        </div>
+        <div class="error">
+            <span  id="error-message" ></span>
+    </div>
+        <div class ="reg">
+            <p align="center">  Don't have an account? <a href="registration.html">Sign in</a></p>
+        </div>
+    </div>
+    <div id="msg">Form submitted successfully</div>
+    <div id="msg4"> Invalid email</div>
+
+</body>
+</html>
